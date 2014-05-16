@@ -1,0 +1,30 @@
+{
+  "name": "turf-average",
+  "version": "0.0.1",
+  "description": "turf average module",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/morganherlocker/turf-average.git"
+  },
+  "keywords": [
+    "turf",
+    "average",
+    "avg",
+    "stats",
+    "geojson",
+    "geospatial"
+  ],
+  "author": "morganherlocker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morganherlocker/turf-average/issues"
+  },
+  "homepage": "https://github.com/morganherlocker/turf-average",
+  "devDependencies": {
+    "tape": "^2.13.0"
+  }
+}
