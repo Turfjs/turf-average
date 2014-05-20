@@ -4,12 +4,12 @@ var inside = require('turf-inside')
 module.exports = function(polyFC, ptFC, inField, outField, done){
   done = done || function () {};
 
-  _.each(polyFC.features, function(poly){
+  polyFC.features.forEach(function(poly){
     if(!poly.properties){
       poly.properties = {}
     }
     var values = []
-    _.each(ptFC.features, function(pt){
+    ptFC.features.forEach(function(pt){
       if (t.inside(pt, poly)) {
         values.push(pt.properties[inField]);
       }
