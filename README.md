@@ -4,6 +4,29 @@ turf-average
 
 Calculates the average value of a field for points within a set of polygons.
 
+###Install
+
+```sh
+npm install turf-average
+```
+
+###Parameters
+
+|name|description|
+|---|---|
+|polygonFC|a FeatureCollection containing Polygons|
+|pointFC|a FeatureCollection containing Points|
+|inField|field from the point features to be averaged|
+|outField|field for the result on each polygon feature|
+
+###Usage
+
+```js
+averaged = average(polygonFC, pointFC, inField, outField)
+```
+
+###Example
+
 ```js
 var average = require('turf-average')
 
