@@ -1,4 +1,3 @@
-var ss = require('simple-statistics')
 var inside = require('turf-inside')
 
 module.exports = function(polyFC, ptFC, inField, outField, done){
@@ -12,8 +11,16 @@ module.exports = function(polyFC, ptFC, inField, outField, done){
         values.push(pt.properties[inField]);
       }
     })
-    poly.properties[outField] = ss.average(values)
+    poly.properties[outField] = average(values)
   })
 
   return polyFC;
+}
+
+function average(values) {
+  var sum = 0;
+  for (var i = 0; i < values.length; i++) {
+    sum += values[i];
+  }
+  return sum / values.length;
 }
