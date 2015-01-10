@@ -9,7 +9,7 @@ var inside = require('turf-inside');
  * @param {FeatureCollection} points a FeatureCollection of {@link Point} features
  * @param {string} field the field in the `points` features from which to pull values to average
  * @param {string} outputField the field in the `polygons` FeatureCollection to put results of the averages
- * @returns {FeatureCollection} a FeatureCollection of {@link Polygon} features with the value of `outField` set to the calculated average
+ * @return {FeatureCollection} a FeatureCollection of {@link Polygon} features with the value of `outField` set to the calculated average
  * @example
  * var poly1 = turf.polygon([[[0,0],[10,0],[10,10], [0,10]]]);
  * var poly2 = turf.polygon([[[10,0],[20,10],[20,20], [20,0]]]);
