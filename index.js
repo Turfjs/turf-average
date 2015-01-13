@@ -21,7 +21,11 @@ var inside = require('turf-inside');
  * var pt5 = turf.point(10.79544,59.931624, {population: 300});
  * var points = turf.featurecollection([pt1, pt2, pt3, pt4, pt5]);
  *
- * //=averaged
+ * var averaged = turf.average(polygons, points, 'population', 'pop_avg');
+ *
+ * var result = turf.featurecollection(points.features.concat(averaged.features));
+ *
+ * //=result
  */
 module.exports = function(polyFC, ptFC, inField, outField, done){
   polyFC.features.forEach(function(poly){
