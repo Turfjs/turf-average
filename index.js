@@ -11,16 +11,15 @@ var inside = require('turf-inside');
  * @param {string} outputField the field in the `polygons` FeatureCollection to put results of the averages
  * @return {FeatureCollection} a FeatureCollection of {@link Polygon} features with the value of `outField` set to the calculated average
  * @example
- * var poly1 = turf.polygon([[[0,0],[10,0],[10,10], [0,10]]]);
- * var poly2 = turf.polygon([[[10,0],[20,10],[20,20], [20,0]]]);
- * var polyFC = turf.featurecollection([poly1, poly2]);
- * var pt1 = turf.point(5,5, {population: 200});
- * var pt2 = turf.point(1,3, {population: 600});
- * var pt3 = turf.point(14,2, {population: 100});
- * var pt4 = turf.point(13,1, {population: 200});
- * var pt5 = turf.point(19,7, {population: 300});
- * var ptFC = turf.featurecollection([pt1, pt2, pt3, pt4, pt5]);
- * var averaged = turf.average(polyFC, ptFC, 'population', 'pop_avg');
+ * var poly1 = turf.polygon([[[10.666351,59.890659],[10.666351,59.936784],[10.762481,59.936784],[10.762481,59.890659],[10.666351,59.890659]]]);
+ * var poly2 = turf.polygon([[[10.764541,59.889281],[10.764541,59.937128],[10.866165,59.937128],[10.866165,59.889281],[10.764541,59.889281]]]);
+ * var polygons = turf.featurecollection([poly1, poly2]);
+ * var pt1 = turf.point(10.724029,59.926807, {population: 200});
+ * var pt2 = turf.point(10.715789,59.904778, {population: 600});
+ * var pt3 = turf.point(10.746002,59.908566, {population: 100});
+ * var pt4 = turf.point(10.806427,59.908910, {population: 200});
+ * var pt5 = turf.point(10.79544,59.931624, {population: 300});
+ * var points = turf.featurecollection([pt1, pt2, pt3, pt4, pt5]);
  *
  * //=averaged
  */
