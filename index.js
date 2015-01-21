@@ -28,11 +28,11 @@ var inside = require('turf-inside');
  *  ]])
  * ]);
  * var points = turf.featurecollection([
- *  turf.point(10.724029, 59.926807, {population: 200}),
- *  turf.point(10.715789, 59.904778, {population: 600}),
- *  turf.point(10.746002, 59.908566, {population: 100}),
- *  turf.point(10.806427, 59.908910, {population: 200}),
- *  turf.point(10.79544, 59.931624, {population: 300})
+ *  turf.point([10.724029, 59.926807], {population: 200}),
+ *  turf.point([10.715789, 59.904778], {population: 600}),
+ *  turf.point([10.746002, 59.908566], {population: 100}),
+ *  turf.point([10.806427, 59.908910], {population: 200}),
+ *  turf.point([10.79544, 59.931624], {population: 300})
  * ]);
  *
  * var averaged = turf.average(
