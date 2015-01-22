@@ -4,11 +4,12 @@
   "description": "turf average module",
   "main": "index.js",
   "scripts": {
-    "test": "tape test.js"
+    "test": "tape test.js",
+    "doc": "dox -r < index.js | doxme --readme > README.md"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/morganherlocker/turf-average.git"
+    "url": "https://github.com/Turfjs/turf-average.git"
   },
   "keywords": [
     "turf",
@@ -21,17 +22,19 @@
   "author": "morganherlocker",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/morganherlocker/turf-average/issues"
+    "url": "https://github.com/Turfjs/turf-average/issues"
   },
-  "homepage": "https://github.com/morganherlocker/turf-average",
+  "homepage": "https://github.com/Turfjs/turf-average",
   "devDependencies": {
     "benchmark": "^1.0.0",
     "tape": "^3.0.3",
-    "turf-featurecollection": "^0.1.0",
-    "turf-point": "^1.2.0",
-    "turf-polygon": "^0.1.1"
+    "turf-featurecollection": "^1.0.0",
+    "turf-point": "^2.0.0",
+    "turf-polygon": "^1.0.1",
+    "dox": "^0.6.1",
+    "doxme": "^1.4.2"
   },
   "dependencies": {
-    "turf-inside": "^1.1.1"
+    "turf-inside": "^1.1.3"
   }
 }
