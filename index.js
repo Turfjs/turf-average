@@ -4,6 +4,7 @@ var inside = require('turf-inside');
  * Calculates the average value of a field for a set of {@link Point} features within a set of {@link Polygon} features.
  *
  * @module turf/average
+ * @category aggregation
  * @param {FeatureCollection} polygons a FeatureCollection of {@link Polygon} features
  * @param {FeatureCollection} points a FeatureCollection of {@link Point} features
  * @param {string} field the field in the `points` features from which to pull values to average
