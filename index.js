@@ -5,11 +5,11 @@ var inside = require('turf-inside');
  *
  * @module turf/average
  * @category aggregation
- * @param {FeatureCollection} polygons a FeatureCollection of {@link Polygon} features
- * @param {FeatureCollection} points a FeatureCollection of {@link Point} features
- * @param {string} field the field in the `points` features from which to pull values to average
- * @param {string} outputField the field in the `polygons` FeatureCollection to put results of the averages
- * @return {FeatureCollection} a FeatureCollection of {@link Polygon} features with the value of `outField` set to the calculated average
+ * @param {FeatureCollection<Polygon>} polygons polygons with values on which to average
+ * @param {FeatureCollection<Point>} points points from which to calculate the average
+ * @param {String} field the field in the `points` features from which to pull values to average
+ * @param {String} outputField the field in `polygons` to put results of the averages
+ * @return {FeatureCollection<Polygon>} polygons with the value of `outField` set to the calculated averages
  * @example
 * var polygons = {
  *   "type": "FeatureCollection",
