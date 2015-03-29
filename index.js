@@ -107,18 +107,18 @@ var inside = require('turf-inside');
  *
  * //=result
  */
-module.exports = function(polyFC, ptFC, inField, outField, done){
-  polyFC.features.forEach(function(poly){
+module.exports = function(polyFC, ptFC, inField, outField) {
+  polyFC.features.forEach(function(poly) {
     if(!poly.properties) poly.properties = {};
     var values = [];
-    ptFC.features.forEach(function(pt){
+    ptFC.features.forEach(function(pt) {
       if (inside(pt, poly)) values.push(pt.properties[inField]);
     });
     poly.properties[outField] = average(values);
   });
 
   return polyFC;
-}
+};
 
 function average(values) {
   var sum = 0;
